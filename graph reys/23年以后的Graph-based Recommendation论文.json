@@ -1,0 +1,227 @@
+[
+  {
+    "link": "https://www.arxiv.org/abs/2406.18984",
+    "title": "Amplify Graph Learning for Recommendation via Sparsity Completion",
+    "publish_time": "20240627",
+    "authors": [
+      "Peng Yuan",
+      "Haojie Li",
+      "Minying Fang",
+      "Xu Yu",
+      "Yongjing Hao",
+      "Junwei Du"
+    ],
+    "abstract": "Graph learning models have been widely deployed in collaborative filtering (CF) based recommendation systems. Due to the issue of data sparsity, the graph structure of the original input lacks potential positive preference edges, which significantly reduces the performance of recommendations. In this paper, we study how to enhance the graph structure for CF more effectively, thereby optimizing the representation of graph nodes. Previous works introduced matrix completion techniques into CF, proposing the use of either stochastic completion methods or superficial structure completion to address this issue. However, most of these approaches employ random numerical filling that lack control over noise perturbations and limit the in-depth exploration of higher-order interaction features of nodes, resulting in biased graph representations. In this paper, we propose an Amplify Graph Learning framework based on Sparsity Completion (called AGL-SC). First, we utilize graph neural network to mine direct interaction features between user and item nodes, which are used as the inputs of the encoder. Second, we design a factorization-based method to mine higher-order interaction features. These features serve as perturbation factors in the latent space of the hidden layer to facilitate generative enhancement. Finally, by employing the variational inference, the above multi-order features are integrated to implement the completion and enhancement of missing graph structures. We conducted benchmark and strategy experiments on four real-world datasets related to recommendation tasks. The experimental results demonstrate that AGL-SC significantly outperforms the state-of-the-art methods.",
+    "score": 0.9860478639602661
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2310.04878v1",
+    "title": "Hybrid Recommendation System using Graph Neural Network and BERT Embeddings",
+    "publish_time": "20231007",
+    "authors": [
+      "Shashidhar Reddy Javaji",
+      "Krutika Sarode"
+    ],
+    "abstract": "Recommender systems have emerged as a crucial component of the modern web ecosystem. The effectiveness and accuracy of such systems are critical for providing users with personalized recommendations that meet their specific interests and needs. In this paper, we introduce a novel model that utilizes a Graph Neural Network (GNN) in conjunction with sentence transformer embeddings to predict anime recommendations for different users. Our model employs the task of link prediction to create a recommendation system that considers both the features of anime and user interactions with different anime. The hybridization of the GNN and transformer embeddings enables us to capture both inter-level and intra-level features of anime data.Our model not only recommends anime to users but also predicts the rating a specific user would give to an anime. We utilize the GraphSAGE network for model building and weighted root mean square error (RMSE) to evaluate the performance of the model. Our approach has the potential to significantly enhance the accuracy and effectiveness of anime recommendation systems and can be extended to other domains that require personalized recommendations.",
+    "score": 0.9844188690185547
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2307.05100",
+    "title": "Generative Contrastive Graph Learning for Recommendation",
+    "publish_time": "20230711",
+    "authors": [
+      "Yonghui Yang",
+      "Zhengwei Wu",
+      "Le Wu",
+      "Kun Zhang",
+      "Richang Hong",
+      "Zhiqiang Zhang",
+      "Jun Zhou",
+      "Meng Wang"
+    ],
+    "abstract": "By treating users' interactions as a user-item graph, graph learning models have been widely deployed in Collaborative Filtering(CF) based recommendation. Recently, researchers have introduced Graph Contrastive Learning(GCL) techniques into CF to alleviate the sparse supervision issue, which first constructs contrastive views by data augmentations and then provides self-supervised signals by maximizing the mutual information between contrastive views. Despite the effectiveness, we argue that current GCL-based recommendation models are still limited as current data augmentation techniques, either structure augmentation or feature augmentation. First, structure augmentation randomly dropout nodes or edges, which is easy to destroy the intrinsic nature of the user-item graph. Second, feature augmentation imposes the same scale noise augmentation on each node, which neglects the unique characteristics of nodes on the graph. To tackle the above limitations, we propose a novel Variational Graph Generative-Contrastive Learning(VGCL) framework for recommendation. Specifically, we leverage variational graph reconstruction to estimate a Gaussian distribution of each node, then generate multiple contrastive views through multiple samplings from the estimated distributions, which builds a bridge between generative and contrastive learning. Besides, the estimated variances are tailored to each node, which regulates the scale of contrastive loss for each node on optimization. Considering the similarity of the estimated distributions, we propose a cluster-aware twofold contrastive learning, a node-level to encourage consistency of a node's contrastive views and a cluster-level to encourage consistency of nodes in a cluster. Finally, extensive experimental results on three public datasets clearly demonstrate the effectiveness of the proposed model.",
+    "score": 0.9823916554450989
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2402.12994",
+    "title": "Distributionally Robust Graph-based Recommendation System",
+    "publish_time": "20240220",
+    "authors": [
+      "Bohao Wang",
+      "Jiawei Chen",
+      "Changdong Li",
+      "Sheng Zhou",
+      "Qihao Shi",
+      "Yang Gao",
+      "Yan Feng",
+      "Chun Chen",
+      "Can Wang"
+    ],
+    "abstract": "With the capacity to capture high-order collaborative signals, Graph Neural Networks (GNNs) have emerged as powerful methods in Recommender Systems (RS). However, their efficacy often hinges on the assumption that training and testing data share the same distribution (a.k.a. IID assumption), and exhibits significant declines under distribution shifts. Distribution shifts commonly arises in RS, often attributed to the dynamic nature of user preferences or ubiquitous biases during data collection in RS. Despite its significance, researches on GNN-based recommendation against distribution shift are still sparse. To bridge this gap, we propose Distributionally Robust GNN (DR-GNN) that incorporates Distributional Robust Optimization (DRO) into the GNN-based recommendation. DR-GNN addresses two core challenges: 1) To enable DRO to cater to graph data intertwined with GNN, we reinterpret GNN as a graph smoothing regularizer, thereby facilitating the nuanced application of DRO; 2) Given the typically sparse nature of recommendation data, which might impede robust optimization, we introduce slight perturbations in the training distribution to expand its support. Notably, while DR-GNN involves complex optimization, it can be implemented easily and efficiently. Our extensive experiments validate the effectiveness of DR-GNN against three typical distribution shifts. The code is available at https://github.com/WANGBohaO-jpg/DR-GNN.",
+    "score": 0.9693705439567566
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2402.11302",
+    "title": "Knowledge Graph-based Session Recommendation with Adaptive Propagation",
+    "publish_time": "20240217",
+    "authors": [
+      "Yu Wang",
+      "Amin Javari",
+      "Janani Balaji",
+      "Walid Shalaby",
+      "Tyler Derr",
+      "Xiquan Cui"
+    ],
+    "abstract": "Session-based recommender systems (SBRSs) predict users' next interacted items based on their historical activities. While most SBRSs capture purchasing intentions locally within each session, capturing items' global information across different sessions is crucial in characterizing their general properties. Previous works capture this cross-session information by constructing graphs and incorporating neighbor information. However, this incorporation cannot vary adaptively according to the unique intention of each session, and the constructed graphs consist of only one type of user-item interaction. To address these limitations, we propose knowledge graph-based session recommendation with session-adaptive propagation. Specifically, we build a knowledge graph by connecting items with multi-typed edges to characterize various user-item interactions. Then, we adaptively aggregate items' neighbor information considering user intention within the learned session. Experimental results demonstrate that equipping our constructed knowledge graph and session-adaptive propagation enhances session recommendation backbones by 10%-20%. Moreover, we provide an industrial case study showing our proposed framework achieves 2% performance boost over an existing well-deployed model at The Home Depot e-platform.",
+    "score": 0.9657520055770874
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2402.08859",
+    "title": "Large Language Model with Graph Convolution for Recommendation",
+    "publish_time": "20240214",
+    "authors": [
+      "Yingpeng Du",
+      "Ziyan Wang",
+      "Zhu Sun",
+      "Haoyan Chua",
+      "Hongzhi Liu",
+      "Zhonghai Wu",
+      "Yining Ma",
+      "Jie Zhang",
+      "Youchen Sun"
+    ],
+    "abstract": "In recent years, efforts have been made to use text information for better user profiling and item characterization in recommendations. However, text information can sometimes be of low quality, hindering its effectiveness for real-world applications. With knowledge and reasoning capabilities capsuled in Large Language Models (LLMs), utilizing LLMs emerges as a promising way for description improvement. However, existing ways of prompting LLMs with raw texts ignore structured knowledge of user-item interactions, which may lead to hallucination problems like inconsistent description generation. To this end, we propose a Graph-aware Convolutional LLM method to elicit LLMs to capture high-order relations in the user-item graph. To adapt text-based LLMs with structured graphs, We use the LLM as an aggregator in graph processing, allowing it to understand graph-based information step by step. Specifically, the LLM is required for description enhancement by exploring multi-hop neighbors layer by layer, thereby propagating information progressively in the graph. To enable LLMs to capture large-scale graph information, we break down the description task into smaller parts, which drastically reduces the context length of the token input with each step. Extensive experiments on three real-world datasets show that our method consistently outperforms state-of-the-art methods.",
+    "score": 0.9656023979187012
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2308.09292",
+    "title": "Graph-based Alignment and Uniformity for Recommendation",
+    "publish_time": "20230818",
+    "authors": [
+      "Liangwei Yang",
+      "Zhiwei Liu",
+      "Chen Wang",
+      "Mingdai Yang",
+      "Xiaolong Liu",
+      "Jing Ma",
+      "Philip S. Yu"
+    ],
+    "abstract": "Collaborative filtering-based recommender systems (RecSys) rely on learning representations for users and items to predict preferences accurately. Representation learning on the hypersphere is a promising approach due to its desirable properties, such as alignment and uniformity. However, the sparsity issue arises when it encounters RecSys. To address this issue, we propose a novel approach, graph-based alignment and uniformity (GraphAU), that explicitly considers high-order connectivities in the user-item bipartite graph. GraphAU aligns the user/item embedding to the dense vector representations of high-order neighbors using a neighborhood aggregator, eliminating the need to compute the burdensome alignment to high-order neighborhoods individually. To address the discrepancy in alignment losses, GraphAU includes a layer-wise alignment pooling module to integrate alignment losses layer-wise. Experiments on four datasets show that GraphAU significantly alleviates the sparsity issue and achieves state-of-the-art performance. We open-source GraphAU at https://github.com/YangLiangwei/GraphAU.",
+    "score": 0.961647093296051
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2304.03344",
+    "title": "Graph Collaborative Signals Denoising and Augmentation for Recommendation",
+    "publish_time": "20230406",
+    "authors": [
+      "Ziwei Fan",
+      "Ke Xu",
+      "Zhang Dong",
+      "Hao Peng",
+      "Jiawei Zhang",
+      "Philip S. Yu"
+    ],
+    "abstract": "Graph collaborative filtering (GCF) is a popular technique for capturing high-order collaborative signals in recommendation systems. However, GCF's bipartite adjacency matrix, which defines the neighbors being aggregated based on user-item interactions, can be noisy for users/items with abundant interactions and insufficient for users/items with scarce interactions. Additionally, the adjacency matrix ignores user-user and item-item correlations, which can limit the scope of beneficial neighbors being aggregated. In this work, we propose a new graph adjacency matrix that incorporates user-user and item-item correlations, as well as a properly designed user-item interaction matrix that balances the number of interactions across all users. To achieve this, we pre-train a graph-based recommendation method to obtain users/items embeddings, and then enhance the user-item interaction matrix via top-K sampling. We also augment the symmetric user-user and item-item correlation components to the adjacency matrix. Our experiments demonstrate that the enhanced user-item interaction matrix with improved neighbors and lower density leads to significant benefits in graph-based recommendation. Moreover, we show that the inclusion of user-user and item-item correlations can improve recommendations for users with both abundant and insufficient interactions. The code is in \\url{https://github.com/zfan20/GraphDA}.",
+    "score": 0.9615177512168884
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2305.04619",
+    "title": "Graph Masked Autoencoder for Sequential Recommendation",
+    "publish_time": "20230508",
+    "authors": [
+      "Yaowen Ye",
+      "Lianghao Xia",
+      "Chao Huang"
+    ],
+    "abstract": "While some powerful neural network architectures (e.g., Transformer, Graph Neural Networks) have achieved improved performance in sequential recommendation with high-order item dependency modeling, they may suffer from poor representation capability in label scarcity scenarios. To address the issue of insufficient labels, Contrastive Learning (CL) has attracted much attention in recent methods to perform data augmentation through embedding contrasting for self-supervision. However, due to the hand-crafted property of their contrastive view generation strategies, existing CL-enhanced models i) can hardly yield consistent performance on diverse sequential recommendation tasks; ii) may not be immune to user behavior data noise. In light of this, we propose a simple yet effective Graph Masked AutoEncoder-enhanced sequential Recommender system (MAERec) that adaptively and dynamically distills global item transitional information for self-supervised augmentation. It naturally avoids the above issue of heavy reliance on constructing high-quality embedding contrastive views. Instead, an adaptive data reconstruction paradigm is designed to be integrated with the long-range item dependency modeling, for informative augmentation in sequential recommendation. Extensive experiments demonstrate that our method significantly outperforms state-of-the-art baseline models and can learn more accurate representations against data noise and sparsity. Our implemented model code is available at https://github.com/HKUDS/MAERec.",
+    "score": 0.9512791633605957
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2305.02759",
+    "title": "Disentangled Contrastive Collaborative Filtering",
+    "publish_time": "20230504",
+    "authors": [
+      "Xubin Ren",
+      "Lianghao Xia",
+      "Jiashu Zhao",
+      "Dawei Yin and Chao Huang"
+    ],
+    "abstract": "Recent studies show that graph neural networks (GNNs) are prevalent to model high-order relationships for collaborative filtering (CF). Towards this research line, graph contrastive learning (GCL) has exhibited powerful performance in addressing the supervision label shortage issue by learning augmented user and item representations. While many of them show their effectiveness, two key questions still remain unexplored: i) Most existing GCL-based CF models are still limited by ignoring the fact that user-item interaction behaviors are often driven by diverse latent intent factors (e.g., shopping for family party, preferred color or brand of products); ii) Their introduced non-adaptive augmentation techniques are vulnerable to noisy information, which raises concerns about the model's robustness and the risk of incorporating misleading self-supervised signals. In light of these limitations, we propose a Disentangled Contrastive Collaborative Filtering framework (DCCF) to realize intent disentanglement with self-supervised augmentation in an adaptive fashion. With the learned disentangled representations with global context, our DCCF is able to not only distill finer-grained latent factors from the entangled self-supervision signals but also alleviate the augmentation-induced noise. Finally, the cross-view contrastive learning task is introduced to enable adaptive augmentation with our parameterized interaction mask generator. Experiments on various public datasets demonstrate the superiority of our method compared to existing solutions. Our model implementation is released at the link https://github.com/HKUDS/DCCF.",
+    "score": 0.9387758374214172
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2308.10835",
+    "title": "Enhancing Recommender Systems with Large Language Model Reasoning Graphs",
+    "publish_time": "20230821",
+    "authors": [
+      "Yan Wang",
+      "Zhixuan Chu",
+      "Xin Ouyang",
+      "Simeng Wang",
+      "Hongyan Hao",
+      "Yue Shen",
+      "Jinjie Gu",
+      "Siqiao Xue",
+      "James Y Zhang",
+      "Qing Cui",
+      "Longfei Li",
+      "Jun Zhou",
+      "Sheng Li"
+    ],
+    "abstract": "Recommendation systems aim to provide users with relevant suggestions, but often lack interpretability and fail to capture higher-level semantic relationships between user behaviors and profiles. In this paper, we propose a novel approach that leverages large language models (LLMs) to construct personalized reasoning graphs. These graphs link a user's profile and behavioral sequences through causal and logical inferences, representing the user's interests in an interpretable way. Our approach, LLM reasoning graphs (LLMRG), has four components: chained graph reasoning, divergent extension, self-verification and scoring, and knowledge base self-improvement. The resulting reasoning graph is encoded using graph neural networks, which serves as additional input to improve conventional recommender systems, without requiring extra user or item information. Our approach demonstrates how LLMs can enable more logical and interpretable recommender systems through personalized reasoning graphs. LLMRG allows recommendations to benefit from both engineered recommendation systems and LLM-derived reasoning graphs. We demonstrate the effectiveness of LLMRG on benchmarks and real-world scenarios in enhancing base recommendation models.",
+    "score": 0.9387718439102173
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2408.01342v1",
+    "title": "Leveraging Knowledge Graph Embedding for Effective Conversational Recommendation",
+    "publish_time": "20240802",
+    "authors": [
+      "Yunwen Xia",
+      "Hui Fang",
+      "Jie Zhang",
+      "Chong Long"
+    ],
+    "abstract": "Conversational recommender system (CRS), which combines the techniques of dialogue system and recommender system, has obtained increasing interest recently. In contrast to traditional recommender system, it learns the user preference better through interactions (i.e. conversations), and then further boosts the recommendation performance. However, existing studies on CRS ignore to address the relationship among attributes, users, and items effectively, which might lead to inappropriate questions and inaccurate recommendations. In this view, we propose a knowledge graph based conversational recommender system (referred as KG-CRS). Specifically, we first integrate the user-item graph and item-attribute graph into a dynamic graph, i.e., dynamically changing during the dialogue process by removing negative items or attributes. We then learn informative embedding of users, items, and attributes by also considering propagation through neighbors on the graph. Extensive experiments on three real datasets validate the superiority of our method over the state-of-the-art approaches in terms of both the recommendation and conversation tasks.",
+    "score": 0.8657164573669434
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2307.10680",
+    "title": "A Personalized Recommender System Based-on Knowledge Graph Embeddings",
+    "publish_time": "20230720",
+    "authors": [
+      "Ngoc Luyen Le (Heudiasyc)",
+      "Marie-H\\'el\\`ene Abel (Heudiasyc)",
+      "Philippe Gouspillou"
+    ],
+    "abstract": "Knowledge graphs have proven to be effective for modeling entities and their relationships through the use of ontologies. The recent emergence in interest for using knowledge graphs as a form of information modeling has led to their increased adoption in recommender systems. By incorporating users and items into the knowledge graph, these systems can better capture the implicit connections between them and provide more accurate recommendations. In this paper, we investigate and propose the construction of a personalized recommender system via knowledge graphs embedding applied to the vehicle purchase/sale domain. The results of our experimentation demonstrate the efficacy of the proposed method in providing relevant recommendations that are consistent with individual users.",
+    "score": 0.7973307371139526
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2307.10639",
+    "title": "Improving Semantic Similarity Measure Within a Recommender System Based-on RDF Graphs",
+    "publish_time": "20230720",
+    "authors": [
+      "Ngoc Luyen Le (Heudiasyc)",
+      "Marie-H\\'el\\`ene Abel (Heudiasyc)",
+      "Philippe Gouspillou"
+    ],
+    "abstract": "In today's era of information explosion, more users are becoming more reliant upon recommender systems to have better advice, suggestions, or inspire them. The measure of the semantic relatedness or likeness between terms, words, or text data plays an important role in different applications dealing with textual data, as in a recommender system. Over the past few years, many ontologies have been developed and used as a form of structured representation of knowledge bases for information systems. The measure of semantic similarity from ontology has developed by several methods. In this paper, we propose and carry on an approach for the improvement of semantic similarity calculations within a recommender system based-on RDF graphs.",
+    "score": 0.6218982338905334
+  },
+  {
+    "link": "https://www.arxiv.org/abs/2302.12465",
+    "title": "PaGE-Link: Path-based Graph Neural Network Explanation for Heterogeneous Link Prediction",
+    "publish_time": "20230224",
+    "authors": [
+      "Shichang Zhang",
+      "Jiani Zhang",
+      "Xiang Song",
+      "Soji Adeshina",
+      "Da Zheng",
+      "Christos Faloutsos",
+      "Yizhou Sun"
+    ],
+    "abstract": "Transparency and accountability have become major concerns for black-box machine learning (ML) models. Proper explanations for the model behavior increase model transparency and help researchers develop more accountable models. Graph neural networks (GNN) have recently shown superior performance in many graph ML problems than traditional methods, and explaining them has attracted increased interest. However, GNN explanation for link prediction (LP) is lacking in the literature. LP is an essential GNN task and corresponds to web applications like recommendation and sponsored search on web. Given existing GNN explanation methods only address node/graph-level tasks, we propose Path-based GNN Explanation for heterogeneous Link prediction (PaGE-Link) that generates explanations with connection interpretability, enjoys model scalability, and handles graph heterogeneity. Qualitatively, PaGE-Link can generate explanations as paths connecting a node pair, which naturally captures connections between the two nodes and easily transfer to human-interpretable explanations. Quantitatively, explanations generated by PaGE-Link improve AUC for recommendation on citation and user-item graphs by 9 - 35% and are chosen as better by 78.79% of responses in human evaluation.",
+    "score": 0.49950581789016724
+  }
+]
